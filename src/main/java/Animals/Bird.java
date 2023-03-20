@@ -8,7 +8,7 @@ public abstract class Bird extends Animal {
 
 
     //////////////////////Methods//////////////////////
-    public String reproduce(Animal parent) {
+    public String reproduce(String baby) {
         return this.name + " has laid an egg with a baby " + this.getClass();
     }
 
