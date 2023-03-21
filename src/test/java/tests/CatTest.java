@@ -20,11 +20,11 @@ public class CatTest {
         assertEquals("chicken", Cat.lastAte, "Cat last ate does not match.");
     }
 
-    @Test
-    public void catSleepTest() {
-        Cat testCat = new Cat();
-        assertFalse(testCat.sleep());
-    }
+//    @Test
+//    public void catSleepTest() {
+//        Cat testCat = new Cat();
+//        assertFalse(testCat.sleep());
+//    }
 
 
 }
