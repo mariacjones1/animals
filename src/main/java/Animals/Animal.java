@@ -1,11 +1,14 @@
 package Animals;
 
+import Exceptions.GenderException;
+
 public abstract class Animal {
     /////////////////////Attributes/////////////////////
     public String colour;
     public int age;
     public String lastAte;
     public String name;
+    public String gender;
 
     ////////////////////Constructors////////////////////
 
@@ -17,7 +20,7 @@ public abstract class Animal {
 
     }
 
-    public abstract String reproduce(String baby);
+    public abstract String reproduce(String baby) throws GenderException;
 
     public void respire() {
 
