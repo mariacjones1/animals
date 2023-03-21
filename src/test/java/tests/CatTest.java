@@ -1,6 +1,7 @@
 package tests;
 
 import animals.*;
+import exceptions.GenderException;
 import exceptions.VomitException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,5 +35,12 @@ public class CatTest {
     @Test
     public void catExcreteTest() {
         assertEquals("Poop.", Cat.excrete(), "Cat can't poop.");
+    }
+
+    @Test
+    public void catReproduceTest() throws GenderException {
+        Cat testCat = new Cat();
+        testCat.gender = "female";
+        assertEquals(Cat.name + " has given birth to a kitten.", testCat.reproduce("kitten"), "Cat can not reproduce.");
     }
 }
