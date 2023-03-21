@@ -11,7 +11,7 @@ public class Cat extends Mammal {
 
     //////////////////////Methods//////////////////////
     public String eat(String food) throws VomitException {
-        if (food != lastAte) {
+        if (!food.equals(lastAte)) {
             lastAte = food;
             return lastAte;
         } else {

@@ -17,6 +17,4 @@ public abstract class Mammal extends Animal {
             return this.name + " has given birth to a " + baby + ".";
         }
     }
-
-
 }

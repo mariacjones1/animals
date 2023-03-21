@@ -19,4 +19,6 @@ public class CatTest {
         testCat.eat("chicken");
         assertEquals("chicken", Cat.lastAte, "Cat last ate does not match.");
     }
+
+
 }
