@@ -9,5 +9,6 @@ public class MammalTest {
     public void mammalReproduceTest() {
         Llama testLlama = new Llama();
         testLlama.gender = "male";
+
     }
 }

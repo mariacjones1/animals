@@ -16,7 +16,7 @@ public class Main {
         catch (VomitException ve) {
             System.out.println(cosmo.name + " has vomited :(");
         }
-        cosmo.sleep(3);
+        cosmo.sleep();
 
         Bat betty = new Bat();
         betty.name = "Betty";

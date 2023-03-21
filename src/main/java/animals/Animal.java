@@ -16,8 +16,9 @@ public abstract class Animal {
     //////////////////////Methods//////////////////////
     public abstract String eat(String food) throws VomitException;
 
-    public void sleep(int time) {
-
+    public boolean sleep() {
+        boolean awake = false;
+        return awake;
     }
 
     public abstract String reproduce(String baby) throws GenderException;
