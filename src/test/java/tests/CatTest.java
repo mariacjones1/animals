@@ -26,5 +26,13 @@ public class CatTest {
         assertFalse(testCat.sleep());
     }
 
+    @Test
+    public void catRespireTest() {
+        assertEquals("CO2", Cat.respire(), "Cat is not breathing.");
+    }
 
+    @Test
+    public void catExcreteTest() {
+        assertEquals("Poop.", Cat.excrete(), "Cat can't poop.");
+    }
 }

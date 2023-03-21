@@ -23,11 +23,11 @@ public abstract class Animal {
 
     public abstract String reproduce(String baby) throws GenderException;
 
-    public void respire() {
-
+    public static String respire() {
+        return "CO2";
     }
 
-    public String excrete() {
+    public static String excrete() {
         return "Poop.";
     }
 
