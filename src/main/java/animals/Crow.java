@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-public class Llama extends Mammal {
+public class Crow extends Bird {
     /////////////////////Attributes/////////////////////
 
 
@@ -12,4 +12,6 @@ public class Llama extends Mammal {
         lastAte = food;
         return lastAte;
     }
+
+
 }

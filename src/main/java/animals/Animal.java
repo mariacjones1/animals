@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-import Exceptions.*;
+import exceptions.*;
 
 public abstract class Animal {
     /////////////////////Attributes/////////////////////

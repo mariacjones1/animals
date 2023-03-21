@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 
-import Animals.*;
-import Exceptions.VomitException;
+import animals.*;
+import exceptions.VomitException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

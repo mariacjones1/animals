@@ -1,8 +1,7 @@
-package Zoo;
-import Animals.*;
-import Exceptions.GenderException;
-import Exceptions.VomitException;
-import Interfaces.Flying;
+package zoo;
+import animals.*;
+import exceptions.GenderException;
+import exceptions.VomitException;
 
 public class Main {
     public static void main(String[] args) {

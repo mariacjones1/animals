@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-import Exceptions.GenderException;
+import exceptions.GenderException;
 
 public abstract class Mammal extends Animal {
     /////////////////////Attributes/////////////////////

@@ -1,8 +1,6 @@
-package Animals;
+package animals;
 
-import Animals.Bird;
-
-public class Crow extends Bird {
+public class Bat extends Mammal {
     /////////////////////Attributes/////////////////////
 
 
