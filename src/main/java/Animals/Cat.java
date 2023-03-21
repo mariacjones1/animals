@@ -1,5 +1,7 @@
 package Animals;
 
+import Exceptions.*;
+
 public class Cat extends Mammal {
     /////////////////////Attributes/////////////////////
 
@@ -8,10 +10,12 @@ public class Cat extends Mammal {
 
 
     //////////////////////Methods//////////////////////
-    public String eat(String food) {
-        lastAte = food;
-        return lastAte;
+    public String eat(String food) throws VomitException {
+        if (food != lastAte) {
+            lastAte = food;
+            return lastAte;
+        } else {
+            throw new VomitException();
+        }
     }
-
-
 }

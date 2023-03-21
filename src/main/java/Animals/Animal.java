@@ -1,6 +1,6 @@
 package Animals;
 
-import Exceptions.GenderException;
+import Exceptions.*;
 
 public abstract class Animal {
     /////////////////////Attributes/////////////////////
@@ -14,7 +14,7 @@ public abstract class Animal {
 
 
     //////////////////////Methods//////////////////////
-    public abstract String eat(String food);
+    public abstract String eat(String food) throws VomitException;
 
     public void sleep(int time) {
 

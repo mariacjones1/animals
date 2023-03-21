@@ -1,6 +1,7 @@
 package Zoo;
 import Animals.*;
 import Exceptions.GenderException;
+import Exceptions.VomitException;
 import Interfaces.Flying;
 
 public class Main {
@@ -9,7 +10,13 @@ public class Main {
         cosmo.name = "Cosmo";
         cosmo.colour = "black";
         cosmo.age = 16;
-        cosmo.eat("chicken");
+        cosmo.gender = "male";
+        try {
+            cosmo.eat("chicken");
+        }
+        catch (VomitException ve) {
+            System.out.println(cosmo.name + " has vomited :(");
+        }
         cosmo.sleep(3);
 
         Bat betty = new Bat();
@@ -47,5 +54,18 @@ public class Main {
         }
 
         System.out.println("My name is " + cosmo.name + ". I am " + cosmo.age + " years old and have " + cosmo.colour + " fur. I ate " + cosmo.lastAte + " for breakfast.");
+        try {
+            cosmo.eat("chicken");
+        }
+        catch (VomitException ve) {
+            System.out.println(cosmo.name + " has vomited :(");
+        }
+        try {
+            cosmo.eat("salmon");
+        }
+        catch (VomitException ve) {
+            System.out.println(cosmo.name + " has vomited :(");
+        }
+        System.out.println(cosmo.name + " just ate some " + cosmo.lastAte + ".");
     }
 }
