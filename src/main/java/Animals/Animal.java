@@ -5,8 +5,8 @@ import Exceptions.*;
 public abstract class Animal {
     /////////////////////Attributes/////////////////////
     public String colour;
-    public int age;
-    public String lastAte;
+    public static int age;
+    public static String lastAte;
     public String name;
     public String gender;
 
@@ -28,6 +28,10 @@ public abstract class Animal {
 
     public String excrete() {
         return "Poop.";
+    }
+
+    public static int getAge() {
+        return age;
     }
 
 }
